@@ -5,7 +5,7 @@ int main()
 {
     char str[20];
     char result[20];
-    int len, i;
+    int len, i,rev;
 
     printf("Enter string :");
     scanf("%s", &str);
@@ -21,7 +21,9 @@ int main()
 
     printf("reverse string : %s", result);
 
-    if (strcmp(str, result) == 0)
+    rev = strcmp(str, result);
+
+    if ( rev == 0)
     {
         printf("\nPalindrome");
     }
